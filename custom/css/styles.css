@@ -32,13 +32,12 @@ img {
 }
 
 header {
-  background-color: #24252a;
-  box-shadow: 0px 3px 10px #464646;
+  background-color: #3ec0fe;
 }
 header .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 3rem;
 }
 header .nav-bar .logo {
   display: flex;
@@ -56,21 +55,24 @@ header .nav-list ul .nav-item {
   margin: 0 15px;
 }
 header .nav-list ul .nav-item .nav-link {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--white);
   font-weight: 400;
+  font-family: var(--sora);
 }
 header .login-button {
   border: none;
-  background-color: var(--dark-blue);
+  background-color: var(--white);
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 header .login-button a {
-  color: var(--white);
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: var(--dark-blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--sora);
+  text-transform: uppercase;
 }
 header .mobile-menu-icon {
   display: none;
@@ -78,7 +80,7 @@ header .mobile-menu-icon {
 header .mobile-menu {
   display: none;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   header .nav-bar {
     padding: 1.5rem 4rem;
   }
@@ -126,5 +128,36 @@ header .mobile-menu {
   }
   header .open {
     display: block;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .banner {
+    background-image: url(../../images/image-header.jpg);
+    min-height: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    background-image: url(../../images/image-header-m.jpg);
+    min-height: 538px;
+  }
+}
+.banner .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner .content h1 {
+  font-size: 3rem;
+  font-family: var(--sora);
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .banner .content h1 {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
