@@ -160,4 +160,47 @@ header .mobile-menu {
   .banner .content h1 {
     font-size: 1.5rem;
   }
+}
+
+.brand-information, .audience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.brand-information .description, .audience .description {
+  width: 50%;
+  padding: 0 8rem 0 8rem;
+}
+.brand-information .description h2, .audience .description h2 {
+  font-size: 2rem;
+  font-family: var(--sora);
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 2rem;
+}
+.brand-information .description p, .audience .description p {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+.brand-information .description span, .audience .description span {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 5px solid #ffcac3;
+}
+.brand-information .image, .audience .image {
+  width: 50%;
+}
+
+.design-photography {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.design-photography .design {
+  background-image: url("~images/image-graphic-design.jpg");
 }/*# sourceMappingURL=styles.css.map */

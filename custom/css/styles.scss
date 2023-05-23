@@ -182,3 +182,54 @@ header {
     } 
   }
 }
+
+// -------- brand information | audience ---------
+.brand-information, .audience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .description {
+    width: 50%;
+    padding: 0 8rem 0 8rem;
+
+    h2 {
+      font-size: 2rem;
+      font-family: var(--sora);
+      color: var(--very-dark-desaturated-blue);
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: var(--open-sans);
+      color: var(--very-dark-grayish-blue);
+      margin-bottom: 2rem;
+    }
+
+    span {
+      font-size: 1rem;
+      font-family: var(--open-sans);
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 5px solid #ffcac3;
+    }
+  }
+
+  .image {
+    width: 50%;
+  }
+}
+
+// ---------- design-photography -----------
+.design-photography {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .design {
+    background-image: url('~images/image-graphic-design.jpg');
+  }
+}
