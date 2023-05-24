@@ -110,36 +110,42 @@ header .mobile-menu {
   }
   header .mobile-menu ul .nav-item .nav-link {
     color: var(--white);
+    font-family: var(--sora);
+    font-size: 1rem;
   }
   header .login-button-m {
     display: block;
     padding: 1rem 2rem;
     border: none;
-    background-color: var(--dark-blue);
+    background-color: var(--white);
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     text-align: center;
+    width: 97px;
+    height: 38px;
+    margin: 0 auto;
   }
   header .login-button-m a {
-    color: var(--white);
+    color: var(--dark-blue);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-family: var(--sora);
   }
   header .open {
     display: block;
   }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 769px) {
   .banner {
-    background-image: url(../../images/image-header.jpg);
+    background-image: url(../../assets/images/image-header.jpg);
     min-height: 800px;
   }
 }
 @media screen and (max-width: 768px) {
   .banner {
-    background-image: url(../../images/image-header-m.jpg);
+    background-image: url(../../assets/images/image-header-m.jpg);
     min-height: 538px;
   }
 }
@@ -162,45 +168,35 @@ header .mobile-menu {
   }
 }
 
-.brand-information, .audience {
+.brand-information, .audience, .graphic-design, .photography {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.brand-information .description, .audience .description {
+.brand-information .description, .audience .description, .graphic-design .description, .photography .description {
   width: 50%;
   padding: 0 8rem 0 8rem;
 }
-.brand-information .description h2, .audience .description h2 {
+.brand-information .description h2, .audience .description h2, .graphic-design .description h2, .photography .description h2 {
   font-size: 2rem;
   font-family: var(--sora);
   color: var(--very-dark-desaturated-blue);
   margin-bottom: 2rem;
 }
-.brand-information .description p, .audience .description p {
+.brand-information .description p, .audience .description p, .graphic-design .description p, .photography .description p {
   font-size: 1rem;
   font-family: var(--open-sans);
   color: var(--very-dark-grayish-blue);
   margin-bottom: 2rem;
 }
-.brand-information .description span, .audience .description span {
+.brand-information .description span, .audience .description span, .graphic-design .description span, .photography .description span {
   font-size: 1rem;
   font-family: var(--open-sans);
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 5px solid #ffcac3;
 }
-.brand-information .image, .audience .image {
+.brand-information .image, .audience .image, .graphic-design .image, .photography .image {
   width: 50%;
-}
-
-.design-photography {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.design-photography .design {
-  background-image: url("~images/image-graphic-design.jpg");
 }/*# sourceMappingURL=styles.css.map */

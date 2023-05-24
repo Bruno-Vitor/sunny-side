@@ -126,23 +126,30 @@ header {
 
         .nav-link {
           color: var(--white);
+          font-family: var(--sora);
+          font-size: 1rem;
         }
       }
     }
+
     .login-button-m {
       display: block;
       padding: 1rem 2rem;
       border: none;
-      background-color: var(--dark-blue);
+      background-color: var(--white);
       padding: 10px 15px;
-      border-radius: 5px;
+      border-radius: 20px;
       cursor: pointer;
       text-align: center;
+      width: 97px;
+      height: 38px;
+      margin: 0 auto;
 
       a {
-        color: var(--white);
+        color: var(--dark-blue);
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        font-family: var(--sora);
       }
     }
     .open {
@@ -153,13 +160,13 @@ header {
 
 // ----------- banner ------------
 .banner {
-  @media screen and (min-width: 770px) {
-    background-image: url(../../images/image-header.jpg);
+  @media screen and (min-width: 769px) {
+    background-image: url(../../assets/images/image-header.jpg);
     min-height: 800px;
   }
 
   @media screen and (max-width: 768px) {
-    background-image: url(../../images/image-header-m.jpg);
+    background-image: url(../../assets/images/image-header-m.jpg);
     min-height: 538px;
   }
 
@@ -183,8 +190,8 @@ header {
   }
 }
 
-// -------- brand information | audience ---------
-.brand-information, .audience {
+// ----- brand information | audience | graphic-design | photography ------
+.brand-information, .audience, .graphic-design, .photography {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,17 +226,5 @@ header {
 
   .image {
     width: 50%;
-  }
-}
-
-// ---------- design-photography -----------
-.design-photography {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
-  .design {
-    background-image: url('~images/image-graphic-design.jpg');
   }
 }
