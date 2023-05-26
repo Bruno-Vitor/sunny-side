@@ -139,13 +139,13 @@ header .mobile-menu {
 
 @media screen and (min-width: 769px) {
   .banner {
-    background-image: url(../../assets/images/image-header.jpg);
+    background-image: url(../../assets/images/desktop/image-header.jpg);
     min-height: 800px;
   }
 }
 @media screen and (max-width: 768px) {
   .banner {
-    background-image: url(../../assets/images/image-header-m.jpg);
+    background-image: url(../../assets/images/mobile/image-header.jpg);
     min-height: 538px;
   }
 }
@@ -173,6 +173,11 @@ header .mobile-menu {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .brand-information, .audience, .graphic-design, .photography {
+    flex-direction: column;
+  }
 }
 .brand-information .description, .audience .description, .graphic-design .description, .photography .description {
   width: 50%;

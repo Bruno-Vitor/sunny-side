@@ -161,12 +161,12 @@ header {
 // ----------- banner ------------
 .banner {
   @media screen and (min-width: 769px) {
-    background-image: url(../../assets/images/image-header.jpg);
+    background-image: url(../../assets/images/desktop/image-header.jpg);
     min-height: 800px;
   }
 
   @media screen and (max-width: 768px) {
-    background-image: url(../../assets/images/image-header-m.jpg);
+    background-image: url(../../assets/images/mobile/image-header.jpg);
     min-height: 538px;
   }
 
@@ -196,6 +196,10 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   .description {
     width: 50%;
