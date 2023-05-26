@@ -81,9 +81,6 @@ header .mobile-menu {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  header .nav-bar {
-    padding: 1.5rem 4rem;
-  }
   header .nav-item {
     display: none;
   }
@@ -183,6 +180,12 @@ header .mobile-menu {
   width: 50%;
   padding: 0 8rem 0 8rem;
 }
+@media screen and (max-width: 768px) {
+  .brand-information .description, .audience .description, .graphic-design .description, .photography .description {
+    width: 100%;
+    padding: 1rem;
+  }
+}
 .brand-information .description h2, .audience .description h2, .graphic-design .description h2, .photography .description h2 {
   font-size: 2rem;
   font-family: var(--sora);
@@ -204,4 +207,65 @@ header .mobile-menu {
 }
 .brand-information .image, .audience .image, .graphic-design .image, .photography .image {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .brand-information .image, .audience .image, .graphic-design .image, .photography .image {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.testimonials {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+  }
+}
+.testimonials h3 {
+  font-size: 1.5rem;
+  font-family: var(--sora);
+  color: var(--dark-grayish-blue);
+  margin: 8rem 0 4rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.testimonials .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonials .cards .content {
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .testimonials .cards .content {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.testimonials .cards .content img {
+  border-radius: 50%;
+}
+.testimonials .cards .content p {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  color: var(--very-dark-grayish-blue);
+  margin: 1.5rem 0;
+}
+.testimonials .cards .content span {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.testimonials .cards .content .office {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  color: var(--grayish-blue);
 }/*# sourceMappingURL=styles.css.map */
