@@ -12,7 +12,7 @@
   --yellow: #fad400;
   --dark-desaturated-cyan: #25564b;
   --dark-blue: #19536b;
-  --dark-moderate-cyan: #458c7e;
+  --dark-moderate-cyan: #64e4ca;
   // neutral
   --very-dark-desaturated-blue: #23303e;
   --very-dark-grayish-blue: #5a636c;
@@ -302,6 +302,59 @@ header {
         font-family: var(--open-sans);
         color: var(--grayish-blue);
       }
+    }
+  }
+}
+
+// -------- Gallery ----------
+.gallery {
+  width: 100%;
+  margin-top: 5rem;
+  
+  .photos {
+    display: flex;
+    width: 25%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+// --------- Footer ---------
+.footer {
+  width: 100%;
+  background-color: var(--dark-moderate-cyan);
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--sora);
+    color: var(--dark-desaturated-cyan);
+    padding: 4rem 0 1rem 0;
+  }
+
+  .anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-size: 1rem;
+      font-family: var(--open-sans);
+      color: var(--dark-desaturated-cyan);
+      padding: 1.5rem 1.5rem 3rem 1.5rem;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      padding: 0 1rem 4rem 1rem;
     }
   }
 }

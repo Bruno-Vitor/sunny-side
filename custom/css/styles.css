@@ -11,7 +11,7 @@
   --yellow: #fad400;
   --dark-desaturated-cyan: #25564b;
   --dark-blue: #19536b;
-  --dark-moderate-cyan: #458c7e;
+  --dark-moderate-cyan: #64e4ca;
   --very-dark-desaturated-blue: #23303e;
   --very-dark-grayish-blue: #5a636c;
   --dark-grayish-blue: #818498;
@@ -268,4 +268,50 @@ header .mobile-menu {
   font-size: 1rem;
   font-family: var(--open-sans);
   color: var(--grayish-blue);
+}
+
+.gallery {
+  width: 100%;
+  margin-top: 5rem;
+}
+.gallery .photos {
+  display: flex;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .gallery .photos {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--dark-moderate-cyan);
+}
+.footer h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--sora);
+  color: var(--dark-desaturated-cyan);
+  padding: 4rem 0 1rem 0;
+}
+.footer .anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .anchor a {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  color: var(--dark-desaturated-cyan);
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+.footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .social-media a {
+  padding: 0 1rem 4rem 1rem;
 }/*# sourceMappingURL=styles.css.map */
