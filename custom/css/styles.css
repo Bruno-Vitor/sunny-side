@@ -60,6 +60,10 @@ header .nav-list ul .nav-item .nav-link {
   font-weight: 400;
   font-family: var(--sora);
 }
+header .nav-list ul .nav-item .nav-link:hover {
+  color: var(--soft-red);
+  transition: all 0.5s;
+}
 header .login-button {
   border: none;
   background-color: var(--white);
@@ -73,6 +77,10 @@ header .login-button a {
   font-weight: 600;
   font-family: var(--sora);
   text-transform: uppercase;
+}
+header .login-button a:hover {
+  color: var(--soft-red);
+  transition: all 0.5s;
 }
 header .mobile-menu-icon {
   display: none;
@@ -204,6 +212,11 @@ header .mobile-menu {
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 5px solid #ffcac3;
+  cursor: pointer;
+}
+.brand-information .description span:hover, .audience .description span:hover, .graphic-design .description span:hover, .photography .description span:hover {
+  color: var(--soft-red);
+  transition: all 0.5s;
 }
 .brand-information .image, .audience .image, .graphic-design .image, .photography .image {
   width: 50%;
@@ -306,6 +319,10 @@ header .mobile-menu {
   font-family: var(--open-sans);
   color: var(--dark-desaturated-cyan);
   padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+.footer .anchor a:hover {
+  color: var(--white);
+  transition: all 0.5s;
 }
 .footer .social-media {
   display: flex;

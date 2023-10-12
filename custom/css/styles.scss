@@ -66,6 +66,11 @@ header {
           color: var(--white);
           font-weight: 400;
           font-family: var(--sora);
+
+          &:hover {
+            color: var(--soft-red);
+            transition: all .5s;
+          }
         }
       }
     }
@@ -84,6 +89,11 @@ header {
       font-weight: 600;
       font-family: var(--sora);
       text-transform: uppercase;
+      
+      &:hover {
+        color: var(--soft-red);
+        transition: all .5s;
+      }
     }
   }
 
@@ -230,6 +240,12 @@ header {
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 5px solid #ffcac3;
+      cursor: pointer;
+      
+      &:hover {
+        color: var(--soft-red);
+        transition: all .5s;
+      }
     }
   }
 
@@ -345,6 +361,11 @@ header {
       font-family: var(--open-sans);
       color: var(--dark-desaturated-cyan);
       padding: 1.5rem 1.5rem 3rem 1.5rem;
+
+      &:hover {
+        color: var(--white);
+        transition: all .5s;
+      }
     }
   }
 
