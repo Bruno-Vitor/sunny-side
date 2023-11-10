@@ -144,13 +144,13 @@ header .mobile-menu {
 
 @media screen and (min-width: 769px) {
   .banner {
-    background-image: url(../../assets/images/desktop/image-header.jpg);
-    min-height: 800px;
+    background-color: #3ec0fe;
+    min-height: 500px;
   }
 }
 @media screen and (max-width: 768px) {
   .banner {
-    background-image: url(../../assets/images/mobile/image-header.jpg);
+    background-color: #3ec0fe;
     min-height: 538px;
   }
 }
@@ -159,13 +159,15 @@ header .mobile-menu {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 500px;
+  padding: 8rem 0 8rem 0;
 }
 .banner .content h1 {
   font-size: 3rem;
   font-family: var(--sora);
   color: var(--white);
   text-transform: uppercase;
-  margin: 5rem 0;
+  padding-bottom: 5rem;
 }
 @media screen and (max-width: 768px) {
   .banner .content h1 {
